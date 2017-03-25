@@ -1,0 +1,13 @@
+.nav-tab {
+  background-color: lightgrey;
+  border-style: solid;
+}
+
+.navigation {
+  text-decoration: none;
+  color: navy;
+}
+
+.nav-tab:hover {
+  background-color: orange;
+}
