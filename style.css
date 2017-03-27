@@ -1,13 +1,59 @@
-.nav-tab {
-  background-color: lightgrey;
-  border-style: solid;
+.nav-tab{
+  width: 20%;
+  float: left;
+  background-color: #808080;
+  color: #2B4C7E;
+  display: block;
+  font-size: 1.5em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+  font-size: 200%;
+}
+
+.nav-tab:hover{
+  background-color: lightgrey;/*#F38630;*/
+  color: #F38630;
 }
 
 .navigation {
-  text-decoration: none;
-  color: navy;
+  color: #2B4C7E;
 }
 
-.nav-tab:hover {
-  background-color: orange;
+#homepage {
+  text-align: center;
+  font-size: 500% ;
+  color: Red;
+}
+
+body {
+  background-color: lightgrey;
+}
+
+.welcomeMessage{
+  font-size: 175%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+}
+
+.headerStyle
+{
+  font-size: 250%;
+  text-align: center;
+  color: Red;
+}
+
+span.hidden-message{
+  opacity: 0.0;
+}
+span.shown-message{
+  opacity: 1.0;
+}
+
+.examples
+{
+  font-size: 115%;
+  color: navy;
 }

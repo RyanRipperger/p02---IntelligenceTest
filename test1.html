@@ -4,31 +4,87 @@
 <head>
   <title>Test Page 1</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
 </head>
 
 <body>
   <nav>
-    <div class="nav-tab">
-      <a class="navigation" href="index.html"> Begin </a>
-    </div>
+      <div style="width: 100">
+        <div class="nav-tab">
+          <a class="navigation" href="index.html">
+            Home
+          </a>
+        </div>
 
-    <div class="nav-tab">
-      <a class="navigation" href="Test1.html"> Test 1 </a>
-    </div>
+        <div class="nav-tab">
+          <a class="navigation" href="test1.html"> Question 1 </a>
+        </div>
 
-    <div class="nav-tab">
-      <a class="navigation" href="Test2.html"> Test 2 </a>
-    </div>
+        <div class="nav-tab">
+          <a class="navigation" href="test2.html"> Question 2 </a>
+        </div>
 
-    <div class="nav-tab">
-      <a class="navigation" href="Test3.html"> Test 3 </a>
-    </div>
+        <div class="nav-tab">
+          <a class="navigation" href="test3.html"> Question 3 </a>
+        </div>
 
-    <div class="nav-tab">
-      <a class="navigation" href="Results.html"> Results </a>
-    </div>
+        <div class="nav-tab">
+          <a class="navigation" href="results.html"> Results </a>
+        </div>
+      </div>
   </nav>
-  <h1> Test 1 </h1>
-  <p> This is a paragraph </p>
+  <br><br>
+  <h1 class=headerStyle> Test 1 </h1>
+
+  <div>
+    <div style="width: 60%" class="welcomeMessage">
+      <p> Welcome to your first test!  This is the first of three tests to
+        evaluate your intelligence!
+      </p>
+
+      <p>
+        Evalutate the following trends and try to solve the question at the end.
+        Good Luck!
+      </p>
+
+      <p class="examples">
+        7 , 3 -> 41021
+        <br>
+        8 , 3 -> 51124
+        <br>
+        5 , 4 -> 1920
+        <br>
+        9 , 6 -> 31554
+        <br>
+        7 , 4 -> 31128
+        <br>
+        5 , 2 -> 3710
+        <br>
+        13 , 6 -> 71978
+        <br>
+        17 , 8 -> 925136
+      </p>
+    </div>
+    <br>
+
+<div style="width: 60%" class="welcomeMessage">
+  <form>
+    <div class="form-group">
+      <label for="formGroupExampleInput" style="color: navy; font-size: 125%">10 , 6 -> ??????</label>
+      <input type="text" class="form-control"  id="test1Answer" placeholder="Input Answer Here">
+    </div>
+  </form>
+
+  <br>
+
+  <div class="form-group">
+      <div class="col-sm-offset-1 col-sm-10">
+        <button type="button" class="btn btn-primary btn-lg" style="text-align: center"
+        onclick=location.href="test1.html";>
+          Submit
+        </button>
+      </div>
+  </div>
 </body>
 </html>
