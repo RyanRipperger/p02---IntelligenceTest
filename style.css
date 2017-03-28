@@ -26,16 +26,11 @@
   color: Red;
 }
 
-body {
-  background-color: lightgrey;
-}
-
 .welcomeMessage{
-  font-size: 175%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 6em
+  width: 60%;
 }
 
 .headerStyle
@@ -54,6 +49,16 @@ span.shown-message{
 
 .examples
 {
-  font-size: 115%;
+  font-size: 200%;
   color: navy;
+}
+
+.introTopText
+{
+  font-size: 200%;
+}
+
+.introBottomText
+{
+  font-size: 150%;
 }

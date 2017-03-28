@@ -3,8 +3,9 @@
 <html lang="en">
 <head>
   <title>Results</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="test-functions.js"></script>
 
 </head>
 
@@ -35,7 +36,44 @@
       </div>
   </nav>
   <br><br>
-  <h1> Results </h1>
-  <p> This is a paragraph </p>
+<div class="container-fluid">
+  <h1 class=headerStyle> Results </h1>
+
+  <div>
+    <div class="welcomeMessage">
+      <p class="introTopText">
+        Hooray!  You've completed the intelligence test!
+      </p>
+
+      <p class="introBottomText">
+        Press the button below to view your results for each question.  A percentage correct
+        will also be displayed as a combined value for all three questions.
+      </p>
+
+      <br>
+
+      <p class="introTopText" id="showAnswer1">
+        Answer 1:
+      </p>
+
+      <p class="introTopText" id="showAnswer2">
+        Answer 2:
+      </p>
+
+      <p class="introTopText" id="showAnswer3">
+        Answer 3:
+      </p>
+    </div>
+
+<div class="welcomeMessage">
+  <div class="form-group">
+      <div class="col-sm-offset-1 col-sm-10">
+        <button type="button" class="btn btn-success btn-lg text-center"
+        style="text-align: center" onclick="showResults()">
+          Show Results
+        </button>
+      </div>
+  </div>
+</div>
 </body>
 </html>

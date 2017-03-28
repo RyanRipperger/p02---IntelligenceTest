@@ -3,12 +3,12 @@
 <html lang="en">
 <head>
   <title>Test Page 3</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="test-functions.js"></script>
 </head>
 
-<body>
+<body lang="en-US">
   <nav>
       <div style="width: 100">
         <div class="nav-tab">
@@ -35,7 +35,67 @@
       </div>
   </nav>
   <br><br>
+<div class="container-fluid">
   <h1 class=headerStyle> Test 3 </h1>
-  <p> This is a paragraph </p>
+
+  <div>
+    <div class="welcomeMessage">
+      <p class="introTopText"> Now for your third and final test!  This is the last of three tests to
+        evaluate your intelligence!
+      </p>
+
+      <p class="introBottomText">
+        Evalutate the following trends and try to solve the question at the end.
+        Good Luck! (Hint: This rule only applies to 3-digit numbers)
+      </p>
+
+      <p class="examples">
+        111 + 111 -> 4
+        <br>
+        222 + 222 -> 16
+        <br>
+        420 + 420 -> 0
+        <br>
+        311 + 311 -> 8
+        <br>
+        526 + 513 -> 60
+        <br>
+        614 + 825 -> 74
+      </p>
+    </div>
+    <br>
+
+<div style="width: 60%" class="welcomeMessage">
+  <form>
+    <div class="form-group" id="answerGroup">
+      <label style="color: navy; font-size: 200%">123 + 456 -> ??????</label>
+      <input type="text" class="form-control"  id="test3Answer";
+          placeholder="Input Answer Here" oninput="validateAnswer()"/>
+      <span id="answerError" class="control-label hidden-message">
+            Error Placeholder (hidden)
+      </span>
+    </div>
+  </form>
+
+  <div class="form-group">
+      <div class="col-sm-offset-1 col-sm-10">
+        <button type="button" class="btn btn-primary btn-lg text-center" style="text-align: center"
+        onclick=location.href="test2.html";>
+          < Previous Question
+        </button>
+
+        <button type="button" class="btn btn-success btn-lg text-center"
+        style="text-align: center" onclick="saveAnswer3()">
+          Finish Test
+        </button>
+
+        <button type="button" class="btn btn-primary btn-lg text-center" style="text-align: center"
+        onclick=location.href="results.html";>
+          View Results >
+        </button>
+      </div>
+  </div>
+</div>
+
 </body>
 </html>

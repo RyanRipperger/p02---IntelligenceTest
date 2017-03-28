@@ -1,8 +1,100 @@
-function test1 ()
+var answer1 = 41660;
+var answer2 = 64;
+var answer3 = 63;
+function saveAnswer1()
+{
+  sessionStorage.test1User = document.getElementById("test1Answer").value;
+  localStorage.answer1 = 41660;
+  //var test1Entered = document.getElementById("test1Answer").value;
+  alert("Answer Saved");
+}
+
+function saveAnswer2()
+{
+    sessionStorage.setItem("test2Entered") = document.getElementById("test2Answer").value;
+    alert("Answer Saved");
+}
+
+function saveAnswer3()
+{
+    sessionStorage.setItem("test3Entered") = document.getElementById("test3Answer").value;
+    alert("Answer Saved");
+}
+
+function validateAnswer()
 {
   var test1Entered = document.getElementById("test1Answer").value;
-  var answer1 = 41660; 
+
+  if (test1Entered.length < 1) {
+    document.getElementById("answerError").innerHTML="Answer must be at least 1 character.";
+    document.getElementById("answerError").classList.remove("hidden-message");
+    document.getElementById("answerError").classList.add("shown-message");
+    //Toggle has-success to off
+    document.getElementById("answerGroup").classList.remove("has-success");
+    //Turn the username items red
+    document.getElementById("answerGroup").classList.add("has-error");
+  }
+
+  else
+  {
+    //Remove error message
+    document.getElementById("answerError").innerHTML="";
+    //Turn the username items green
+    document.getElementById("answerGroup").classList.add("has-success");
+    //Toggle has-error to off
+    document.getElementById("answerGroup").classList.remove("has-error");
+    //Toggle off error message
+  }
 }
+
+function showResults()
+{
+  alert("Answer 1: " + checkAnswer1());
+}
+
+function checkAnswer1()
+{
+  var test1Submit = sessionStorage.getItem("test1User");
+  if (test1Submit == answer1)
+  {
+    alert("success");
+  }
+
+  else
+  {
+    alert("failed");
+  }
+}
+
+/* function checkAnswer2()
+{
+  var q2 = new boolean(false);
+  if (test2Entered == answer2)
+  {
+    q2 = "success";
+  }
+
+  else
+  {
+    q2 = "failed";
+  }
+}
+
+
+function checkAnswer3()
+{
+  var q3 = "failed";
+  if (test3Entered == answer3)
+  {
+    q3 = "success";
+  }
+
+  else
+  {
+    q3 = "failed";
+  }
+}
+
 
 /*function validateUsername()
 {
