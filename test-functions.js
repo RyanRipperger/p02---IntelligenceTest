@@ -170,6 +170,7 @@ function validateAnswer3()
 
 function showResults()
 {
+
   checkAnswer1();
   checkAnswer2();
   checkAnswer3();
@@ -188,7 +189,6 @@ function checkAnswer1()
   else
   {
     document.getElementById("ans1").innerHTML = "Failed ):";
-    perc1 = 0;
   }
 }
 
@@ -196,14 +196,13 @@ function checkAnswer2()
 {
   if (sessionStorage.getItem("test2Entered") == answer2)
   {
-    document.getElementById("ans2").innerHTML = "Success";
-    perc1 = 1;
+    document.getElementById("ans2").innerHTML = "Success!";
+    perc2 = 1;
   }
 
   else
   {
     document.getElementById("ans2").innerHTML = "Failed ):";
-    perc1 = 0;
   }
 }
 
@@ -211,20 +210,20 @@ function checkAnswer3()
 {
   if (sessionStorage.getItem("test3Entered") == answer3)
   {
-    document.getElementById("ans3").innerHTML = "Success";
-    perc1 = 1;
+    document.getElementById("ans3").innerHTML = "Success!";
+    perc3 = 1;
   }
 
   else
   {
     document.getElementById("ans3").innerHTML = "Failed ):";
-    perc1 = 0;
   }
 }
 
 function calcPercent()
 {
-  finalPercent = (((perc1 + perc2 + perc3)/3)*100);
+  finalPercent = (perc1 + perc2 + perc3)/3;
+  finalPercent = finalPercent * 100;
 }
 
 /* function checkAnswer2()
