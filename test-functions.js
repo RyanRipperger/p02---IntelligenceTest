@@ -1,3 +1,4 @@
+// By: Ryan Ripperger
 var answer1 = 41660;
 var answer2 = 64;
 var answer3 = 63;
@@ -234,74 +235,3 @@ function calcPercent()
     document.getElementById("successImage").innerHTML = '<img src="https://img.memesuper.com/97021af1fdaa01ac760c52b97013d40a_success-kid-meme-on-memegen-memes-on-success_512-512.jpeg" alt="Success meme" style="width: 250px; height: 250px">'
   }
 }
-
-
-/* function checkAnswer2()
-{
-  var q2 = new boolean(false);
-  if (test2Entered == answer2)
-  {
-    q2 = "success";
-  }
-
-  else
-  {
-    q2 = "failed";
-  }
-}
-
-
-function checkAnswer3()
-{
-  var q3 = "failed";
-  if (test3Entered == answer3)
-  {
-    q3 = "success";
-  }
-
-  else
-  {
-    q3 = "failed";
-  }
-}
-
-
-/*function validateUsername()
-{
-  //Grab the user's input and store in variables
-  var userEntered = document.getElementById("user").value;
-  var passEntered = document.getElementById("pass").value;
-  var userSpace = userEntered.includes(" ");
-  //Error when the entered Username is less than 6 characters
-  if (userEntered.length < 6) {
-    document.getElementById("usernameError").innerHTML="Username must be at least 6 characters.";
-    document.getElementById("usernameError").classList.remove("hidden-message");
-    document.getElementById("usernameError").classList.add("shown-message");
-    //Toggle has-success to off
-    document.getElementById("answerGroup").classList.remove("has-success");
-    //Turn the username items red
-    document.getElementById("answerGroup").classList.add("has-error");
-  }
-
-  else if (userSpace == true) {
-    //Searches the string to look for a space and returns an error if true
-    document.getElementById("usernameError").innerHTML="Username cannot contain spaces";
-    document.getElementById("usernameError").classList.remove("hidden-message");
-    document.getElementById("usernameError").classList.add("shown-message");
-    //Turn the username items red
-    document.getElementById("answerGroup").classList.add("has-error");
-    //Toggle has-success to off
-    document.getElementById("answerGroup").classList.remove("has-success");
-  }
-
-  else {
-    //Remove error message
-    document.getElementById("usernameError").innerHTML="";
-    //Turn the username items green
-    document.getElementById("answerGroup").classList.add("has-success");
-    //Toggle has-error to off
-    document.getElementById("answerGroup").classList.remove("has-error");
-    //Toggle off error message
-  }
-}
-*/
