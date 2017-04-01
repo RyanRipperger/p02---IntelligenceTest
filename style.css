@@ -62,3 +62,13 @@ span.shown-message{
 {
   font-size: 150%;
 }
+
+.success
+{
+  color: green;
+}
+
+.failed
+{
+  color: red;
+}

@@ -10,18 +10,23 @@ function saveAnswer1()
 {
   sessionStorage.setItem("test1Entered", document.getElementById("test1Answer").value);
   alert("Answer Saved");
+  window.location.href="test2.html";
+
 }
 
 function saveAnswer2()
 {
   sessionStorage.setItem("test2Entered", document.getElementById("test2Answer").value);
     alert("Answer Saved");
+    window.location.href="test3.html";
+
 }
 
 function saveAnswer3()
 {
   sessionStorage.setItem("test3Entered", document.getElementById("test3Answer").value);
     alert("Answer Saved");
+    window.location.href="results.html";
 }
 
 function validateAnswer1()
@@ -182,13 +187,13 @@ function checkAnswer1()
 {
   if (sessionStorage.getItem("test1Entered") == answer1)
   {
-    document.getElementById("ans1").innerHTML = "Success!";
+    document.getElementById("ans1").innerHTML = '<span class="success"> Success! </span>';
     perc1 = 1;
   }
 
   else
   {
-    document.getElementById("ans1").innerHTML = "Failed ):";
+    document.getElementById("ans1").innerHTML = '<span class="failed"> Failed ): </span>';
   }
 }
 
@@ -196,13 +201,13 @@ function checkAnswer2()
 {
   if (sessionStorage.getItem("test2Entered") == answer2)
   {
-    document.getElementById("ans2").innerHTML = "Success!";
+    document.getElementById("ans2").innerHTML = '<span class="success"> Success! </span>';
     perc2 = 1;
   }
 
   else
   {
-    document.getElementById("ans2").innerHTML = "Failed ):";
+    document.getElementById("ans2").innerHTML = '<span class="failed"> Failed ): </span>';
   }
 }
 
@@ -210,13 +215,13 @@ function checkAnswer3()
 {
   if (sessionStorage.getItem("test3Entered") == answer3)
   {
-    document.getElementById("ans3").innerHTML = "Success!";
+    document.getElementById("ans3").innerHTML = '<span class="success"> Success! </span>';
     perc3 = 1;
   }
 
   else
   {
-    document.getElementById("ans3").innerHTML = "Failed ):";
+    document.getElementById("ans3").innerHTML = '<span class="failed"> Failed ): </span>';
   }
 }
 
@@ -224,7 +229,12 @@ function calcPercent()
 {
   finalPercent = (perc1 + perc2 + perc3)/3;
   finalPercent = finalPercent * 100;
+  if (finalPercent == 100)
+  {
+    document.getElementById("successImage").innerHTML = '<img src="https://img.memesuper.com/97021af1fdaa01ac760c52b97013d40a_success-kid-meme-on-memegen-memes-on-success_512-512.jpeg" alt="Success meme" style="width: 250px; height: 250px">'
+  }
 }
+
 
 /* function checkAnswer2()
 {
